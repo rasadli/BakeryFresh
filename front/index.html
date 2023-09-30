@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="website icon" type="png" href="./assets/images/website_icon.A54qmjOObS405mRjU_VXL8zKHsktg5_gAeVD9XbKDNBRc4XiR9f7Tm0KnzIjK78Hqs5ZCpc-">
+
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="./assets/css/bootsrtap/bootstrap.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet"> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-xl-3 col-7">
+                    <div class="header_logo">
+                        <a href="http://127.0.0.1:5500/index.html">
+                            <img src="./assets/images/logo-white.svg"
+                                id="changed_logo" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-xl-6 d-none d-lg-block">
+                    <div class="header_menu">
+                        <ul class="d-flex justify-content-center menu_ul">
+                            <li>
+                                <a href="http://127.0.0.1:5500/index.html" class="color_changers">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/pages/shop.html" class="color_changers">
+                                    <span>Shop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/pages/about.html" class="color_changers">
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/pages/blog.html" class="color_changers">
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/pages/contact.html" class="color_changers">
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-xl-3 col-5">
+                    <div class="header_meta">
+                        <ul class="d-flex justify-content-end">
+                            <li>
+                                <button>
+                                    <a href="http://127.0.0.1:5500/pages/sign_in.html" class="my_cart">
+                                        <i class="fa-solid fa-cart-shopping color_changers2"></i>
+                                    </a>
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill shop_cart_quantity"></span>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/pages/sign_in.html" class="my_profile">
+                                    <i class="fa-solid fa-user color_changers2 my_account"></i>
+                                </a>
+                            </li>
+                            <li class="d-lg-none">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="fa-solid fa-bars color_changers2"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="d-flex justify-content-center flex-column flex-row menu_ul">
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/pages/shop.html">
+                            <span>Shop</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/pages/about.html#">
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/pages/blog.html">
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/pages/contact.html">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="enterence_sctn pt-5">
+        <div class="container pt-5">
+            <div class="mx-auto text-center pt-5 mt-5">
+                <img width="95" height="108"
+                    src="./assets/images/slider/shape-01.webp" alt="Shape">
+                <h1 class="enterence_title text-white">Bring The Best Experience </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="brand-section">
+        <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+            <div class="swiper-wrapper" id="swiper-wrapper-3440d1058e7289673" aria-live="polite">
+                <div class="swiper-slide brand-item swiper-slide-active" role="group" aria-label="1 / 9"
+                    style="width: 233.2px; margin-right: 50px;"> <img
+                        src="./assets/images/brand/partner-1.webp" alt="Brand">
+                </div>
+                <div class="swiper-slide brand-item swiper-slide-next" role="group" aria-label="2 / 9"
+                    style="width: 233.2px; margin-right: 50px;">
+                    <img src="./assets/images/brand/partner-2.webp" alt="Brand">
+                </div>
+                <div class="swiper-slide brand-item" role="group" aria-label="3 / 9"
+                    style="width: 233.2px; margin-right: 50px;">
+                    <img src="./assets/images/brand/partner-3.webp" alt="Brand">
+                </div>
+                <div class="swiper-slide brand-item" role="group" aria-label="4 / 9"
+                    style="width: 233.2px; margin-right: 50px;">
+                    <img src="./assets/images/brand/partner-4.webp" alt="Brand">
+                </div>
+                <div class="swiper-slide brand-item" role="group" aria-label="5 / 9"
+                    style="width: 233.2px; margin-right: 50px;">
+                    <img src="./assets/images/brand/partner-5.webp" alt="Brand">
+                </div>
+                <div class="swiper-slide brand-item" role="group" aria-label="6 / 9"
+                    style="width: 233.2px; margin-right: 50px;">
+                    <img src="./assets/images/brand/partner-1.webp" alt="Brand">
+                </div>
+                <div class="swiper-slide brand-item" role="group" aria-label="7 / 9"
+                    style="width: 233.2px; margin-right: 50px;">
+                    <img src="./assets/images/brand/partner-2.webp" alt="Brand">
+                </div>
+                <div class="swiper-slide brand-item" role="group" aria-label="8 / 9"
+                    style="width: 233.2px; margin-right: 50px;">
+                    <img src="./assets/images/brand/partner-4.webp" alt="Brand">
+                </div>
+                <div class="swiper-slide brand-item" role="group" aria-label="9 / 9"
+                    style="width: 233.2px; margin-right: 50px;">
+                    <img src="./assets/images/brand/partner-5.webp" alt="Brand">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100">
+        <div class="call-to-action-02"
+            style="background-image: url(./assets/images/call-to-action-bg-02.webp);">
+            <div class="call-to-action-02-wrapper section-padding-01">
+                <div class="container">
+                    <div class="call-to-action-02-content text-center">
+                        <h4 class="call-to-action-02-content__sub-title ">Bakerfresh</h4>
+                        <h2 class="call-to-action-02-content__title text-white mt-1">The most amazing cakes</h2>
+                        <p class="mt-5 text-white">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
+                            qui
+                            esse pariatur duis deserunt mollit dolore cillum minim tempor enim</p>
+                        <a class="btn btn_shop mt-5" href="http://127.0.0.1:5500/pages/shop.html">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="call-to-action-02-meta">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="call-to-action-02-meta-item text-center">
+                                <a href="http://127.0.0.1:5500/pages/shop.html">
+                                    <div class="call-to-action-02-meta-item__icon text-primary">
+                                        <i class="fa-solid fa-mobile" style="color: #BC8157;"></i>
+                                    </div>
+                                    <div class="call-to-action-02-meta-item__text text-white">Contact us</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="call-to-action-02-meta-item text-center">
+                                <a href="http://127.0.0.1:5500/pages/shop.html">
+                                    <div class="call-to-action-02-meta-item__icon text-primary">
+                                        <i class="fa-solid fa-bag-shopping" style="color: #BC8157;"></i>
+                                    </div>
+                                    <div class="call-to-action-02-meta-item__text text-white">Shopping Online</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="call-to-action-02-meta-item text-center">
+                                <a href="http://127.0.0.1:5500v/contact.html">
+                                    <div class="call-to-action-02-meta-item__icon text-primary">
+                                        <i class="fa-solid fa-location-dot" style="color: #BC8157;"></i>
+                                    </div>
+                                    <div class="call-to-action-02-meta-item__text text-white">Store Location</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer w-100 bg-white">
+        <div class="container">
+            <div class="row gy-6">
+                <div class="col-md-4">
+                    <div class="footer_widget">
+                        <div class="footer_widget_logo">
+                            <a class="logo_dark" href="index.html"><img
+                                    src="./assets/images/logo.svg"
+                                    alt="Logo"></a>
+                        </div>
+                        <div class="footer_widget_social">
+                            <a href="#" class="text_black"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="text_black"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="text_black"><i class="fa-brands fa-pinterest-p"></i></a>
+                            <a href="#" class="text_black"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap gap-4">
+                        <div class="flex-grow-1">
+                            <h4 class="footer_widget_title text_black">Categories</h4>
+                            <ul class="footer_widget_link">
+                                <li><a href="http://127.0.0.1:5500/pages/shop.html">Cupcake</a></li>
+                                <li><a href="http://127.0.0.1:5500/pages/shop.html">Pastry</a></li>
+                                <li><a href="http://127.0.0.1:5500/pages/shop.html">Muffin</a></li>
+                                <li><a href="http://127.0.0.1:5500/pages/shop.html">Waffle</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h4 class="footer_widget_title text_black">Services</h4>
+                            <ul class="footer_widget_link">
+                                <li><a href="http://127.0.0.1:5500/pages/shop.html">Delivery</a></li>
+                                <li><a href="http://127.0.0.1:5500/pages/shop.html">Payment</a></li>
+                                <li><a href="http://127.0.0.1:5500/pages/shop.html">Returns</a></li>
+                                <li><a href="http://127.0.0.1:5500/pages/shop.html">Privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h4 class="footer_widget_title text_black">Information</h4>
+                            <ul class="footer_widget_link">
+                                <li><a href="http://127.0.0.1:5500/pages/about.html">About Us</a></li>
+                                <li><a href="http://127.0.0.1:5500/pages/contact.html">Contact Us</a></li>
+                                <li><a href="http://127.0.0.1:5500/pages/blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS File -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+
+</body>
+
+</html>
